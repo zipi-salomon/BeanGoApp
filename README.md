@@ -17,9 +17,16 @@ BeanGo is a coffee marketplace application that allows users to browse coffee sh
 - **Database:** MySQL
 - **Authentication:** JWT
 
-## Project Structure
-- **BeanGo/**
-- **│**
-- **├── backend/ # Backend files (API, services, controllers)**
-- **├── frontend/ # React frontend**
-- **└── README.md # Project documentation**
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies for both backend and frontend
+3. Configure environment variables in the backend `.env` file
+4. Run backend and frontend servers
+5. Open the app in your browser
+
+## Author
+
+**Zipi Salomon**
+
