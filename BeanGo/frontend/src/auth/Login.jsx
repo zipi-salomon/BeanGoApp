@@ -8,7 +8,6 @@ const Login = () => {
     const navigate = useNavigate();
     const {setUser}=useUserContext();
     const [error, setError] = useState('');
-co
     const submitLogin = async(e) => {
         e.preventDefault()        
         setError('')
