@@ -1,0 +1,22 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: right;
+    direction: rtl;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    color: #010101;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1e1c1c;
+    margin-bottom: 1rem;
+  }
+  

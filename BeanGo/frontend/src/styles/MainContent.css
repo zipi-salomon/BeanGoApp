@@ -1,0 +1,7 @@
+.main-content {
+  padding: 20px;
+  padding-top: 80px; /* ריווח עליון כדי לפנות מקום ל-Header */
+  width: 100%;
+  max-width: 1200px; /* רוחב מקסימלי לתוכן */
+  margin: 0 auto; /* מרכוז התוכן */
+}

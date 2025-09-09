@@ -1,0 +1,201 @@
+.admin-users-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.users-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #664d31;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.user-row {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.user-row:hover {
+    background-color: #f5f5f5;
+}
+
+td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.update-button {
+    background-color: #927555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.update-button:hover {
+    background-color: #927555cf;
+}
+
+.status-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #664d31;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #8B4513;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #8B4513;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-container {
+    padding: 20px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+}
+
+.error-message {
+    margin: 0;
+}
+
+.empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Make table more compact */
+.user-row {
+    height: 48px;
+}
+
+th, td {
+    padding: 8px 12px;
+}
+
+/* Add alternating row colors */
+.user-row:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Add hover effect for entire row */
+.user-row:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+/* Make buttons more compact */
+.action-buttons {
+    gap: 6px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* Add spacing between columns */
+table {
+    border-spacing: 0 8px;
+}
+
+/* Add subtle border to separate columns */
+td:not(:last-child) {
+    border-right: 1px solid #dee2e6;
+}
+
+/* Make text more readable */
+td {
+    font-size: 13px;
+    line-height: 1.4;
+}

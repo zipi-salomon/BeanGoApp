@@ -1,0 +1,19 @@
+  .page-container {
+  min-height: 100vh;
+  width: 100%;
+  direction: rtl;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: none;
+  padding: 2rem;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,106 @@
+.menu-container {
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+    gap: 32px;
+    
+    padding: 2rem;
+    
+    direction: rtl;
+    
+    }
+    .menu-card {
+    
+    width: 320px;
+    
+    background-color: #fffdf7;
+    
+    border-radius: 16px;
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    overflow: hidden;
+    
+    text-align: right;
+    
+    transition: transform 0.2s ease;
+    
+    }
+    .menu-card:hover {
+    
+    transform: scale(1.02);
+    
+    }
+    .menu-image {
+    
+    width: 100%;
+    
+    height: 220px;
+    
+    object-fit: cover;
+    
+    }
+    .menu-details {
+    
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
+    }
+    .menu-name {
+    
+    font-size: 1.3rem;
+    
+    font-weight: bold;
+    
+    margin-bottom: 0.1rem;
+    
+    }
+    .menu-price {
+    
+    color: #666;
+    
+    font-size: 1rem;
+    
+    margin-bottom: 0.5rem;
+    
+    }
+    .menu-description {
+    
+    color: #444;
+    
+    font-size: 0.95rem;
+    
+    
+    }
+    .menu-details {
+        display: flex;
+        flex-direction: row; /* כדי שהפריטים יהיו בשורה */
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .menu-info {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .add-to-cart-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: #333;
+        transition: transform 0.2s ease;
+      }
+      
+      .add-to-cart-btn:hover {
+        transform: scale(1.2);
+      }
+      .menu-shop {
+        font-size: 0.8rem;
+        color: #666;
+      }
